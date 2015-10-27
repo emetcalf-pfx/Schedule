@@ -43,7 +43,7 @@ public class ScheduleTest {
         assertEquals(Shift.DAY, schedule.getShiftByDaysSincePassed(56));
     }
     
-    @Ignore
+    @Ignore("Don't support past days yet.")
     @Test
     public void testGetShiftByDaysSincePassed_dayInPast() {
         assertEquals(Shift.OFF, schedule.getShiftByDaysSincePassed(-4));
